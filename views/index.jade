@@ -1,5 +1,15 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+  body
+    h1 Kuin v0.0.3 Download
+    form(action='http://kuin.net:9174/app/getkuin/../service/dame')
+      input(type='hidden', name='q1', value='e394b1')
+      input(type='hidden', name='q2', value='e394b1')
+      input(type='hidden', name='q3', value='e394b2')
+      input(type='hidden', name='q4', value='e394b3')
+      input(type='hidden', name='q5', value='e394b4')
+      input(type='submit', value='Kuinをダウンロード')
+    h1 MD5
+    pre dcc10f7bbb671a3c628e6b9a95d6641b  Kuin_0_03.zip
